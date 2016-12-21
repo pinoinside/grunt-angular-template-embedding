@@ -38,7 +38,6 @@ module.exports = function(grunt) {
         }
         else
         {
-          var filename = path.basename(filepath);
           var contents = grunt.file.read(filepath);
           var cs = contents.split("\n");
           for (var i = 0; i < cs.length; i++)
