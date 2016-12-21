@@ -1,57 +1,32 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "grunt-angular-template-embedding",
-        "scope": null,
-        "escapedName": "grunt-angular-template-embedding",
-        "name": "grunt-angular-template-embedding",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
-      },
-      ""
-    ]
-  ],
-  "_from": "grunt-angular-template-embedding@latest",
-  "_id": "grunt-angular-template-embedding@0.0.1",
-  "_inCache": true,
-  "_location": "/grunt-angular-template-embedding",
-  "_npmUser": {
-    "name": "pinoinside",
-    "email": "a.pinucci@gmail.com"
-  },
-  "_npmVersion": "0.0.1",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "grunt-angular-template-embedding",
-    "scope": null,
-    "escapedName": "grunt-angular-template-embedding",
-    "name": "grunt-angular-template-embedding",
-    "rawSpec": "",
-    "spec": "latest",
-    "type": "tag"
-  },
-  "_requiredBy": [
-    "#USER"
-  ],
-  "_resolved": "",
-  "_shasum": "",
-  "_shrinkwrap": null,
-  "_spec": "grunt-angular-template-embedding",
-  "_where": "",
+  "name": "grunt-angular-template-embedding",
+  "description": "Simple Grunt plugin for angular template embed in directives",
+  "version": "0.0.1",
+  "homepage": "https://github.com/pinoinside/grunt-angular-template-embedding",
   "author": {
     "name": "Andrea Pinucci",
-    "email": "a.pinucci@gmail.com"
+    "email": "a.pinucci@gmail.com",
+    "url": "www.pinoinside.it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pinoinside/grunt-angular-template-embedding.git"
   },
   "bugs": {
     "url": "https://github.com/pinoinside/grunt-angular-template-embedding/issues"
   },
-  "dependencies": {
-    "html-minifier": "~0.5.4",
-    "jsesc": "^0.4.3"
+  "licenses": [
+    {
+      "type": "GPLv3",
+      "url": "https://github.com/pinoinside/grunt-angular-template-embedding/blob/master/LICENSE"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
   },
-  "description": "Inline template embedding for AngularJS directives.",
+  "scripts": {
+    "test": "grunt test"
+  },
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-clean": "~0.5.0",
@@ -60,15 +35,6 @@
     "jshint-stylish": "~0.1.5",
     "load-grunt-tasks": "~0.3.0"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "",
-    "tarball": ""
-  },
-  "engines": {
-    "node": ">= 0.8.0"
-  },
-  "homepage": "https://github.com/pinoinside/grunt-angular-template-embedding",
   "keywords": [
     "grunt",
     "gruntplugin",
@@ -77,28 +43,5 @@
     "inline",
     "embedding",
     "directive"
-  ],
-  "licenses": [
-    {
-      "type": "MIT"
-    }
-  ],
-  "main": "Gruntfile.js",
-  "maintainers": [
-    {
-      "name": "pinoinside",
-      "email": "a.pinucci@gmail.com"
-    }
-  ],
-  "name": "grunt-angular-template-embedding",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pinoinside/grunt-angular-template-embedding.git"
-  },
-  "scripts": {
-    "test": "grunt test"
-  },
-  "version": "0.0.1"
+  ]
 }

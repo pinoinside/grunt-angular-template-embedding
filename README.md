@@ -1,15 +1,14 @@
 # grunt-angular-template-embedding
 
-> Inline template generator for AngularJS directives.
+> Simple Grunt plugin for angular template embed in directives
 
 ## What's this?
 
 This [Grunt](http://gruntjs.com/) plugin allows you to embed AngularJS templates inside directives.
-I am aware that there are plenty other similar plugins however none did exactly what I wanted.
-
+I am aware that there are many other plugins like this but none did exactly what I wanted.
 
 ## Getting Started
-This plugin requires Grunt.
+This plugin requires Grunt `~0.4.5`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
@@ -39,6 +38,10 @@ grunt.initConfig({
 })
 ```
 
+### Options
+
+To be done
+
 ### Usage Examples
 
 The plugin expects two options:
@@ -57,15 +60,8 @@ app.directive('yourDirective', function() {
 }]);
 ```
 
-
-## TODO
-
-* Add unit tests
-
 ## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Lint and test your code using [Grunt](http://gruntjs.com/).
-
-If you're creating a pull request, also please add yourself to the `CONTRIBUTORS.txt` file (or create it if it's necessary).
+In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
 * 0.0.1 - Initial Release

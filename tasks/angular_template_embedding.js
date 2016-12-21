@@ -1,23 +1,20 @@
 /*
  * grunt-angular-template-embedding
- *
+ * https://github.com/pinoinside/grunt-angular-template-embedding
  *
  * Copyright (c) 2016 Andrea Pinucci
- * Licensed under GNU General Public License v 3.0
+ * Licensed under the GPLv3 license.
  */
 
 'use strict';
 
-var minify  = require('html-minifier').minify;
-var path = require('path');
-var jsesc = require('jsesc');
-
-module.exports = function (grunt) {
+module.exports = function(grunt) {
 
   // Please see the Grunt documentation for more information regarding task
   // creation: http://gruntjs.com/creating-tasks
 
-  grunt.registerMultiTask('embedtemplates', 'Inline template generator for AngularJS directives.', function () {
+  grunt.registerMultiTask('embedtemplates', 'Simple Grunt plugin for angular template embed in directives', function() {
+    // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
       htmlmin: {
         collapseBooleanAttributes:      true,
@@ -30,6 +27,7 @@ module.exports = function (grunt) {
         removeStyleLinkTypeAttributes:  true
       }
     });
+
     this.files.forEach(function (file) {
       var dest = file.dest;
       var src = file.src.filter(function (filepath) {

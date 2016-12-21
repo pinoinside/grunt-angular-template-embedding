@@ -1,10 +1,11 @@
 /*
  * grunt-angular-template-embedding
- *
+ * https://github.com/pinoinside/grunt-angular-template-embedding
  *
  * Copyright (c) 2016 Andrea Pinucci
- * Licensed under GNU General Public License v 3.0
+ * Licensed under the GPLv3 license.
  */
+
 
 'use strict';
 
