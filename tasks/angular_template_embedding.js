@@ -8,6 +8,9 @@
 
 'use strict';
 
+var minify  = require('html-minifier').minify;
+var jsesc = require('jsesc');
+
 module.exports = function(grunt) {
 
   // Please see the Grunt documentation for more information regarding task
