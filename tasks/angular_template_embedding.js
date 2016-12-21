@@ -45,8 +45,11 @@ module.exports = function(grunt) {
           var cs = contents.split("\n");
           for (var i = 0; i < cs.length; i++)
           {
-              if(cs[i].indexOf("templateUrl") != -1)
+              var templateUrl_index = cs[i].indexOf("templateUrl");
+              var comma = cs[i].trim().endsWith(",");
+              if(templateUrl_index != -1)
               {
+                var prefix = cs[i].substring(0, templateUrl_index);
                 var open_quote_index = cs[i].indexOf("'");
                 cs[i] = cs[i].substring(open_quote_index+1);
                 var close_quote_index = cs[i].indexOf("'");
@@ -54,8 +57,10 @@ module.exports = function(grunt) {
                 var template = grunt.file.read("." + cs[i]);
                 template = minify(template, options.htmlmin);
                 template = jsesc(template);
-                src = 'template:\'' + template + '\''
-                var output = '' + src + '\n';
+                src = prefix + 'template:\'' + template + '\''
+                var output = '' + src;
+                if(comma)
+                  output = output + ",";
                 cs[i] = output;
               }
           }

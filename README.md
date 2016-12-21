@@ -49,7 +49,7 @@ The plugin expects two options:
 * `src` - directive file or files where templateUrl properties will be substituted with template property followed by minified html.
 * `dest` - the file where the resultant directive will be saved (same folder of original).
 
-
+Note: templateUrl must be an absolute path from the root of the web-app folder.
 ```js
 app.directive('yourDirective', function() {
   ...
@@ -64,7 +64,7 @@ app.directive('yourDirective', function() {
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-* 0.0.1 - Initial Release
+* 0.0.3 - Initial Release
 
 ## License
 Copyright (c) 2016 Andrea Pinucci, licensed under GNU General Public License v 3.0
