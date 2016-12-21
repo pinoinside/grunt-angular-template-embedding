@@ -1,7 +1,7 @@
 {
   "name": "grunt-angular-template-embedding",
   "description": "Simple Grunt plugin for angular template embed in directives",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/pinoinside/grunt-angular-template-embedding",
   "author": {
     "name": "Andrea Pinucci",
